@@ -22,6 +22,8 @@
         </activity>
         <activity android:name=".demo2.GLPointsActivity">
         </activity>
+        <activity android:name=".demo3.GLlinesActivity">
+        </activity>
     </application>
 
 </manifest>

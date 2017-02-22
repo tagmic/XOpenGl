@@ -33,7 +33,7 @@ public class GLPointsActivity extends AppCompatActivity implements IOpenglIntere
         setContentView(R.layout.activity_glpoints);
         glSurfaceView=new GLSurfaceView(this);
         glSurfaceView.setRenderer(new OpenglRenderer(this));
-        addContentView(glSurfaceView,new RelativeLayout.LayoutParams(400,400));
+        addContentView(glSurfaceView,new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,RelativeLayout.LayoutParams.MATCH_PARENT));
     }
     @Override
     public void DrawScene(GL10 gl) {
@@ -50,8 +50,9 @@ public class GLPointsActivity extends AppCompatActivity implements IOpenglIntere
         gl.glColor4f(1.0f, 0.0f, 0.0f, 1.0f);
         //设置顶点的大小
         gl.glPointSize(8f);
-        //
+        //初始化变换矩阵栈
         gl.glLoadIdentity();
+        //坐标转换（glTranslate*/glRotate*/glScale*）
         gl.glTranslatef(0, 0, -4);
         //打开顶点管道
         gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);

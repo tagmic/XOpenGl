@@ -24,6 +24,8 @@
         </activity>
         <activity android:name=".demo3.GLlinesActivity">
         </activity>
+        <activity android:name=".demo4.GLTrianActivity">
+        </activity>
     </application>
 
 </manifest>

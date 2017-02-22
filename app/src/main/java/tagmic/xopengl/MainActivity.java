@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import tagmic.xopengl.demo1.Demo1Activity;
+import tagmic.xopengl.demo2.GLPointsActivity;
 
 /**
  * 通常二维图形库可以绘制点，线，多边形，圆弧，路径等等。
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
-                startActivity(new Intent(MainActivity.this, Demo1Activity.class));
+                startActivity(new Intent(MainActivity.this, GLPointsActivity.class));
             }
         });
         // Example of a call to a native method

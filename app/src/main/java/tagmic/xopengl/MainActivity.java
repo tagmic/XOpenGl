@@ -1,5 +1,6 @@
 package tagmic.xopengl;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 import android.support.design.widget.FloatingActionButton;
@@ -10,6 +11,14 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import tagmic.xopengl.demo1.Demo1Activity;
+
+/**
+ * 通常二维图形库可以绘制点，线，多边形，圆弧，路径等等。
+ * OpenGL ES 支持绘制的基本几何图形分为三类：点，线段，三角形。
+ * 也就是说OpenGL ES 只能绘制这三种基本几何图形。
+ * 任何复杂的2D或是3D图形都是通过这三种几何图形构造而成的
+ */
 public class MainActivity extends AppCompatActivity {
 
     // Used to load the 'native-lib' library on application startup.
@@ -23,16 +32,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+                startActivity(new Intent(MainActivity.this, Demo1Activity.class));
             }
         });
-
         // Example of a call to a native method
         TextView tv = (TextView) findViewById(R.id.sample_text);
         tv.setText(stringFromJNI());

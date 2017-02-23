@@ -16,6 +16,7 @@ import tagmic.xopengl.demo2.GLPointsActivity;
 import tagmic.xopengl.demo3.GLlinesActivity;
 import tagmic.xopengl.demo4.GLTrianActivity;
 import tagmic.xopengl.demo5.DrawIcosahedronActivity;
+import tagmic.xopengl.demo6.Demo6Activity;
 
 /**
  * 通常二维图形库可以绘制点，线，多边形，圆弧，路径等等。
@@ -42,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
-                startActivity(new Intent(MainActivity.this, DrawIcosahedronActivity.class));
+                startActivity(new Intent(MainActivity.this, Demo6Activity.class));
             }
         });
         // Example of a call to a native method

@@ -28,6 +28,8 @@
         </activity>
         <activity android:name=".demo5.DrawIcosahedronActivity">
         </activity>
+        <activity android:name=".demo6.Demo6Activity">
+        </activity>
     </application>
 
 </manifest>

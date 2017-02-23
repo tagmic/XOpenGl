@@ -26,6 +26,8 @@
         </activity>
         <activity android:name=".demo4.GLTrianActivity">
         </activity>
+        <activity android:name=".demo5.DrawIcosahedronActivity">
+        </activity>
     </application>
 
 </manifest>

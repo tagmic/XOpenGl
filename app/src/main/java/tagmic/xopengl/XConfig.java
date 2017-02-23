@@ -1,7 +1,7 @@
 package tagmic.xopengl;
 
 /**
- * Created by techssd on 2017/2/22.
+ * 手机屏幕中心为坐标原点.
  */
 
 public class XConfig {
